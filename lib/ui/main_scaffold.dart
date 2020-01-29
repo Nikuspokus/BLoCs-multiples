@@ -10,7 +10,20 @@ class MainScaffold extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar( title: Text(title),),
-      body: Center(child : Text("Salut les codeurs")),
+      body: Center(child :
+        Column(
+          children: <Widget>[
+            Text("choississez votre BLoC"),
+            RaisedButton(
+              child: Text("Compteur"),
+              onPressed: null,
+            ),
+            RaisedButton(
+              child: Text("Texte"),
+              onPressed: null,
+            ),
+          ]
+        )),
     );
   }
 }
